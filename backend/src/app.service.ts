@@ -54,6 +54,10 @@ export class AppService {
         }
 
         while (slot <= lastSlotForPeriod) {
+          /*
+            Adding minutes like this allow us to stay on the same day
+            even when timeslot goes beyond midnigth.
+          */
           const nextSlot = slot.add(sessionDuration, 'minutes');
           nextAvailabilities.push({
             day: current.format('ddd MMM DD YYYY'),

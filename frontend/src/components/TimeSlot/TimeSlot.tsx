@@ -8,7 +8,6 @@ interface Props {
 }
 
 const TimeSlot = ({onClick, startTime, selected}: Props) => {
-  console.log(selected)
   return (
     <button className={
       classNames("TimeSlot", {"TimeSlot--selected": selected})
