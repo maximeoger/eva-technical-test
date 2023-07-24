@@ -11,6 +11,7 @@
   "scripts": {
     "start:all": "pm2 start ecosystem.config.js",
     "delete:all": "pm2 delete all",
+    "install:all": "sh install.sh",
     "logs": "pm2 logs"
   }
 }

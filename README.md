@@ -1,7 +1,7 @@
 # How to run the project
 
 ```shell
-$ yarn install
+$ yarn install:all
 $ yarn run start:all
 ```
 
@@ -9,6 +9,12 @@ $ yarn run start:all
 
 ```shell
 $ yarn run delete:all
+```
+
+# display logs
+
+```shell
+$ yarn run logs
 ```
 
 Frontend url : http://localhost:5173/
