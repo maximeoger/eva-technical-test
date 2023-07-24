@@ -1,0 +1,9 @@
+.TimeSlot {
+  width: 97px;
+  height: 97px;
+  border: 2px solid #7F65E9;
+  font-weight: 600;
+  font-size: 14px;
+
+  &--selected { color: white; background: #7F65E9; }
+}

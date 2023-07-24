@@ -1,0 +1,58 @@
+.Calendar {
+  max-width: 910px;
+  margin: 0 auto;
+
+  &__header {
+    padding: 24px 46px;
+    display: flex;
+    justify-content: space-between;
+    & button:last-child {
+      text-decoration: underline;
+    }
+    & div > span:first-child {
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    & div > span:last-child {
+      margin-left: 8px;
+    }
+  }
+
+  &__slotsHeader {
+    margin-top: 24px;
+    padding: 16px 0;
+    & span {
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+
+  &__iconContainer {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__scheduleDays {
+    display: flex;
+    &__scrollbox {
+      overflow-x: hidden;
+      max-height: 130px;
+      max-width: 814px;
+      display: flex;
+      gap: 5px;
+    }
+  }
+
+  &__slots {
+    margin-top: 24px;
+    padding: 8px 46px;
+  }
+
+  &__slotsContainer {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+}

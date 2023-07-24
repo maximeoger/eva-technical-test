@@ -1,0 +1,25 @@
+.ScheduleDay {
+  min-width: 112px;
+  min-height: 129px;
+  border: 2px solid #7F65E9;
+  font-weight: 600;
+  font-size: 14px;
+
+  &--selected { color: white; background: #7F65E9; }
+
+  &__weekDay {
+    font-weight: 100;
+  }
+
+  &__day {
+    font-weight: 700;
+  }
+
+  &__month {
+    font-weight: 700;
+  }
+
+  &__year {
+    font-weight: 400;
+  }
+}
