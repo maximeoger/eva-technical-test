@@ -9,7 +9,6 @@ export class AppService {
     return 'Hello World!';
   }
   async getSlots(): Promise<Availabilities[]> {
-
     const { opening_time, terrains, session_duration } = await getData();
 
     const nextAvailabilities: Array<Availabilities> = [];
@@ -25,7 +24,7 @@ export class AppService {
     };
 
     const startingTime = dayjs();
-    const endingTime = startingTime.add(10, 'days');
+    const endingTime = startingTime.add(30, 'days');
     const sessionDuration = Number(session_duration.split(':')[1]);
 
     let current = startingTime;

@@ -1,4 +1,4 @@
-export const weekAvailabilitiesMock = {
+export const roomSettingsMock = {
   opening_time: {
     monday: [
       {

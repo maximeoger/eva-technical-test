@@ -1,10 +1,10 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { weekAvailabilitiesMock, availabilitiesMock } from '../mocks/Slots';
+import { roomSettingsMock, availabilitiesMock } from '../mocks/Slots';
 
 jest.mock('./helpers/getData', () => ({
-  getData: jest.fn(() => Promise.resolve(weekAvailabilitiesMock)),
+  getData: jest.fn(() => Promise.resolve(roomSettingsMock)),
 }));
 
 describe('AppController', () => {
